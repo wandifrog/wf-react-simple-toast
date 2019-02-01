@@ -1,0 +1,18 @@
+.ToastContainer {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.toast {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 10px 0 0;
+    max-width: 300px;
+}
+
+.toast_message {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #eee;
+}

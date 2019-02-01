@@ -1,31 +1,9 @@
-### wf-react-simple-toast
-
-## Documentation
-
-### Installation
-
-**npm**
-
-```bash
-npm install wf-react-simple-toast --save
-```
-
-**yarn**
-
-```bash
-yarn add wf-react-simple-toast
-```
-
-### [PlayGround](https://codesandbox.io/s/812j97ljx0)
-
-### Example
-
-```js
-import React from "react";
-import { ToastContainer, Toast } from 'wf-react-simple-toast'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { ToastContainer, Toast } from './wf-react-simple-toast'
 
 class App extends React.Component {
-  
+
   handleClick() {
     Toast('Hello I am a toast!', 1500)
   }
@@ -53,4 +31,5 @@ class App extends React.Component {
     }
   }
 }
-```
+
+ReactDOM.render(<App />, document.getElementById('index'))

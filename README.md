@@ -25,7 +25,6 @@ import React from 'react'
 import { ToastContainer, Toast } from 'wf-react-simple-toast'
 
 const App = () => {
-  
   React.useEffect(() => {
     for (let i = 1, magic = Promise.resolve(); i < 8; i++) {
       magic = magic.then(

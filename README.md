@@ -21,36 +21,34 @@ yarn add wf-react-simple-toast
 ### Example
 
 ```js
-import React from "react";
+import React from 'react'
 import { ToastContainer, Toast } from 'wf-react-simple-toast'
 
-class App extends React.Component {
+const App = () => {
   
-  handleClick() {
-    Toast('Hello I am a toast!', 1500)
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <ToastContainer timeToClose="3000" />
-        <h1 onClick={() => this.handleClick()}>Click Me to summon the toast</h1>
-      </React.Fragment>
-    )
-  }
-
-  componentDidMount() {
+  React.useEffect(() => {
     for (let i = 1, magic = Promise.resolve(); i < 8; i++) {
       magic = magic.then(
         () =>
           new Promise(resolve =>
             setTimeout(() => {
-              Toast("toast " + i);
-              resolve();
+              Toast("toast " + i)
+              resolve()
             }, Math.random() * 1000)
           )
       );
     }
+  }, [])
+
+  const handleClick = () => {
+    Toast('Hello I am a toast!', 1500)
   }
+
+  return (
+    <React.Fragment>
+      <ToastContainer timeToClose="3000" />
+      <h1 onClick={() => handleClick()}>Click Me to summon the toast</h1>
+    </React.Fragment>
+  )
 }
 ```

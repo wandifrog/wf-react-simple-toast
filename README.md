@@ -16,7 +16,7 @@ npm install wf-react-simple-toast --save
 yarn add wf-react-simple-toast
 ```
 
-### [PlayGround](https://codesandbox.io/s/812j97ljx0)
+### [PlayGround](https://codesandbox.io/s/hungry-dhawan-fuy64)
 
 ### Example
 

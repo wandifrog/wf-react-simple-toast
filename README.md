@@ -1,5 +1,7 @@
 ### wf-react-simple-toast
 
+![](https://wandifrog.github.io/wf-react-simple-toast/img/example.gif)
+
 ## Documentation
 
 ### Installation

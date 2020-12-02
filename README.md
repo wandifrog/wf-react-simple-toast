@@ -37,7 +37,7 @@ const App = () => {
               resolve()
             }, Math.random() * 1000)
           )
-      );
+      )
     }
   }, [])
 
@@ -53,3 +53,11 @@ const App = () => {
   )
 }
 ```
+
+### `timeToClose`
+
+Used to set the `Toast` fade time.
+
+| Type       | Default  | Required |
+| ---------- | -------- | -------- |
+| number     | 2000     | No       |

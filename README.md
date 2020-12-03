@@ -54,9 +54,9 @@ const App = () => {
 }
 ```
 
-### `timeToClose`
+#### `timeToClose`
 
-Used to set the `Toast` fading time.
+Used to set the `Toast` default fading time.
 
 | Type       | Default  | Required |
 | ---------- | -------- | -------- |

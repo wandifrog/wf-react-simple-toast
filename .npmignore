@@ -1,4 +1,5 @@
 src
+example
 webpack.config.js
 .gitignore
 .cache
@@ -9,3 +10,8 @@ webpack.config.js
 .huskyrc          
 .lintstagedrc
 tsconfig.json
+LICENSE
+package.json
+README.md
+yarn.lock
+package-lock

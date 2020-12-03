@@ -24,4 +24,5 @@ function Toast(message: string, timeToClose: number = defaultTimeToClose) {
   }, timeToClose)
 }
 
+
 export { ToastContainer, Toast }

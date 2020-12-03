@@ -2,3 +2,10 @@ src
 webpack.config.js
 .gitignore
 .cache
+.commitlintrc
+.editorconfig     
+.eslintignore     
+.eslintrc         
+.huskyrc          
+.lintstagedrc
+tsconfig.json

@@ -1,10 +1,11 @@
 {
   "name": "wf-react-simple-toast",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Simple toast component for React library.",
   "main": "dist/index.js",
   "scripts": {
-    "lint": "eslint . --ext .js,.ts,.tsx --fix"
+    "lint": "eslint . --ext .js,.ts,.tsx --fix",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "wf",
@@ -16,15 +17,24 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
+    "@types/react": "^17.0.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "commitlint": "^11.0.0",
+    "css-loader": "^2.1.0",
     "eslint": "^7.14.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.2",
-    "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "typescript": "^4.1.2"
+    "react": "^17.0.1",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2",
+    "webpack-cli": "^4.2.0",
+    "webpack": "^4.29.0"
   },
   "peerDependencies": {
     "react": "^17.0.1",

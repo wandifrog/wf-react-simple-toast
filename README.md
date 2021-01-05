@@ -24,7 +24,7 @@ yarn add wf-react-simple-toast
 
 ```js
 import React from 'react'
-import { ToastContainer, Toast } from 'wf-react-simple-toast'
+import Toast from 'wf-react-simple-toast'
 
 const App = () => {
   React.useEffect(() => {
@@ -42,12 +42,12 @@ const App = () => {
   }, [])
 
   const handleClick = () => {
-    Toast('Hello I am a toast!', 1500)
+    Toast.toastMessage('Hello I am a toast!', 1500)
   }
 
   return (
     <React.Fragment>
-      <ToastContainer timeToClose="3000" />
+      <Toast timeToClose="3000" />
       <h1 onClick={() => handleClick()}>Click Me to summon the toast</h1>
     </React.Fragment>
   )

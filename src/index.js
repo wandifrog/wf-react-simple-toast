@@ -1,12 +1,11 @@
-const toastContainerStyle = {
-  position: 'fixed',
-  right: 0,
-  top: 0
+let defaultTimeToClose = 2000
+
+function Toast({ timeToClose = defaultTimeToClose }) {
+  defaultTimeToClose = timeToClose
+  return <div style={toastContainerStyle} id="toast-container" />
 }
 
-const Toast = () => <div style={toastContainerStyle} id="toast-container" />
-
-function toastMessage(message, timeToClose = 2000) {
+function toastMessage(message, timeToClose = defaultTimeToClose) {
   const container = document.getElementById('toast-container')
   const randomId = 'toast=' + Math.ceil((Math.random() * 100000))
   const toastMessageElement = `
@@ -22,6 +21,12 @@ function toastMessage(message, timeToClose = 2000) {
   setTimeout(() => {
     document.getElementById(randomId) && document.getElementById(randomId).remove()
   }, timeToClose)
+}
+
+const toastContainerStyle = {
+  position: 'fixed',
+  right: 0,
+  top: 0
 }
 
 Toast.toastMessage = toastMessage

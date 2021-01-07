@@ -1,8 +1,10 @@
+import React from 'react'
+
 let defaultTimeToClose = 2000
 
 function Toast({ timeToClose = defaultTimeToClose }) {
   defaultTimeToClose = timeToClose
-  return <div style={toastContainerStyle} id="toast-container" />
+  return React.createElement('div', { id: 'toast-container' })
 }
 
 function toastMessage(message, timeToClose = defaultTimeToClose) {

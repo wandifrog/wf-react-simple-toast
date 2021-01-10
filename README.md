@@ -33,7 +33,7 @@ const App = () => {
         () =>
           new Promise(resolve =>
             setTimeout(() => {
-              Toast("toast " + i)
+              Toast.toastMessage("toast " + i)
               resolve()
             }, Math.random() * 1000)
           )

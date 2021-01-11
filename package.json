@@ -1,6 +1,6 @@
 {
   "name": "wf-react-simple-toast",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Simple toast component for React library.",
   "main": "dist/index.js",
   "scripts": {

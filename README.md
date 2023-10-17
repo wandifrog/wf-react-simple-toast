@@ -1,6 +1,6 @@
 ### wf-react-simple-toast
 
-![](https://wandifrog.github.io/wf-react-simple-toast/img/example.gif)
+![example](https://github.com/wandifrog/wf-react-simple-toast/assets/19669385/4b06d8ed-36aa-4cc8-ba05-abda8904e2da)
 
 ## Documentation
 
